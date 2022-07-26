@@ -1,0 +1,174 @@
+.main {
+	&__flowers {
+	}
+}
+
+//=====<flowers>=====
+.flowers {
+	text-align: center;
+	height: 100vh;
+	position: relative;
+	background: linear-gradient(180deg, rgba(4, 10, 10, 0) 0%, #040a0a 100%);
+
+	.text-in-bg {
+		position: absolute;
+		@include adaptive-style(top, 110, 20);
+		left: 0;
+		right: 0;
+		z-index: 1;
+	}
+
+	&__body {
+		position: absolute;
+		@include adaptive-style(top, 260, 60);
+		left: 0;
+		right: 0;
+		z-index: 2;
+		height: 100%;
+
+		display: flex;
+		flex-direction: column;
+	}
+
+	&__bg {
+		width: 100%;
+		max-width: 1920px;
+		box-shadow: 0 -100px 130px #051318;
+		position: relative;
+		z-index: 2;
+	}
+
+	&__title-text,
+	.text-in-bg {
+		font-family: $second-font;
+		font-weight: 300;
+		font-size: rem(200);
+		line-height: 1.1;
+		letter-spacing: 0.2em;
+		text-transform: uppercase;
+
+		@media (min-width: #{$content-width + px}) and (max-height: 700px) {
+			font-size: rem(170);
+		}
+
+		@media (max-width: #{$content-width + px}) {
+			font-size: rem(150);
+		}
+
+		@media (max-width: #{$md4 + px}) {
+			font-size: rem(120);
+		}
+
+		@media (max-width: #{$md3 + px}) {
+			font-size: rem(90);
+		}
+
+		@media (max-width: #{$md2 + px}) {
+			font-size: rem(50);
+		}
+	}
+
+	&__title-text,
+	&__text,
+	&__button {
+		// position: relative;
+		// z-index: 3;
+	}
+
+	&__text {
+		margin-bottom: rem(45);
+	}
+
+	&__button {
+		display: inline-block;
+		margin: 0 auto;
+	}
+
+	&__bottom {
+		@media (max-width: #{$md2 + px}) and (max-height: 680px) {
+			padding: 0 15px;
+			position: absolute;
+			top: 50%;
+			left: 0;
+			z-index: 4;
+		}
+
+		@media (max-width: #{$md2 + px}) and (min-height: 680px) {
+			position: absolute;
+			top: 40%;
+			z-index: 4;
+		}
+	}
+
+	&__cart {
+		align-self: flex-end;
+		margin-top: -19px;
+
+		width: 60px;
+		height: 60px;
+
+		@media (max-width: #{$md4 + px}) {
+			position: fixed;
+			top: 30px;
+			right: 15px;
+			z-index: 4;
+
+			width: 40px;
+			height: 40px;
+		}
+	}
+}
+
+.cart {
+	&:hover .cart__icon {
+		filter: drop-shadow(0 0 1px $white);
+	}
+
+	&__button {
+		display: block;
+		background: transparent;
+		padding: 15px;
+		position: relative;
+
+		@media (max-width: #{$md4 + px}) {
+			padding: 10px;
+		}
+	}
+
+	&__icon {
+		fill: $white;
+		width: 30px;
+		height: 30px;
+
+		@media (max-width: #{$md4 + px}) {
+			width: 20px;
+			height: 20px;
+		}
+	}
+
+	&__products-count {
+		position: absolute;
+		top: 8px;
+		right: 8px;
+		z-index: 1;
+
+		font-size: rem(14);
+		text-align: center;
+		vertical-align: middle;
+
+		display: inline-block;
+		width: 20px;
+		height: 20px;
+		background-color: $light-green;
+		border-radius: 50%;
+
+		@media (max-width: #{$md4 + px}) {
+			top: 3px;
+			right: 3px;
+			width: 15px;
+			height: 15px;
+			font-size: rem(12);
+		}
+	}
+}
+//=====</flowers>=====

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css">
+	<title>Lower Flower | Main</title>
+	<link rel="icon" href="images/logo.ico" type="image/x-icon">
+	<link href="https://fonts.googleapis.com/css?family=Cormorant:300,regular&display=swap" rel="stylesheet" />
+	<link href="https://fonts.googleapis.com/css?family=Oswald:300,regular,700&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+
+	<div class="wrapper">
+		@@include('./_first-header.html')
+
+		<main class="main">
+			<section class="main__flowers flowers">
+				<img class="flowers__bg" src="images/flowers-bg/image-removebg 1.png" alt="">
+				<h1 class="text-in-bg">lover</h1>
+				<div class="flowers__container flowers__body">
+					<h2 class="flowers__title-text">
+						flower
+					</h2>
+					<div class="flowers__bottom">
+						<div class="flowers__text block-text">
+							<p>Працюємо для тих, хто цінує свіжість та витонченість	квітів</p>
+						</div>
+						<a href="#" class="flowers__button btn-filled">Каталог</a>
+					</div>
+					<div class="flowers__cart cart">
+						<button class="cart__button blur-bg">
+							<svg class="cart__icon">
+								 <use xlink:href="./images/icons/icons.svg#cart"></use>
+							</svg>
+							<span class="cart__products-count">5</span>
+						</button>
+					</div>
+				</div>
+			</section>
+			<!-- <div class="main__container">
+				<button class="btn-filled loading">
+					<svg class="btn-icon-load">
+						<use xlink:href="images/icons/icons.svg#loading"></use>
+					</svg>
+					переглянути каталог
+				</button>
+				<button class="btn-trnbg loading">
+					<svg class="btn-icon-load">
+						<use xlink:href="images/icons/icons.svg#loadingWhite"></use>
+					</svg>
+					в корзину
+				</button>
+				<div class="form-feild">
+					<input class="standart-input" type="tel" id="input" required name="input" value=""
+						placeholder="Введіть ваше ім'я">
+					<label class="label-for-standart-input" for="input">Ваше ім'я*</label>
+				</div>
+			</div> -->
+		</main>
+
+		@@include('./_footer.html')
+	</div>
+
+	<script src="js/script.js"></script>
+</body>
+
+</html>

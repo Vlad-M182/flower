@@ -1,0 +1,247 @@
+@import 'vars';
+@import 'fonts';
+@import 'nullstyle';
+
+//====Глобальні стилі=========
+
+:root {
+	--white: #ffffff;
+	--black: #040a0a;
+
+	--light-green: #43ffd2;
+	--dark-pink: #7d2253;
+	--light-pink: #d978ac;
+}
+
+html,
+body {
+	font-family: $main-font;
+	font-weight: $main-font-weight;
+	background-color: var(--black);
+	color: var(--white);
+}
+
+body {
+	&.lock {
+		overflow: hidden;
+	}
+
+	&::-webkit-scrollbar {
+		width: 6px;
+	}
+
+	&::-webkit-scrollbar-track {
+		border-radius: 4px;
+		background-color: #051318;
+	}
+
+	&::-webkit-scrollbar-thumb {
+		background-color: var(--light-green);
+		border-radius: 4px;
+
+		&:hover {
+			background-color: var(--light-pink);
+		}
+	}
+}
+
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	min-height: 100%;
+	position: relative;
+}
+[class*='__container'] {
+	max-width: rem($content-width + 30);
+	margin: 0 auto;
+	padding: 0 15px;
+}
+.main {
+	flex: 1 1 auto;
+}
+
+.btn-filled {
+	font-size: rem(14);
+	padding: rem(16) rem(50);
+	background-color: var(--light-green);
+	text-transform: uppercase;
+	border: 1px solid var(--light-green);
+	color: var(--black);
+	transition: all 0.2s ease 0s;
+
+	&.loading .btn-icon-load {
+		display: inline-block;
+	}
+
+	&:hover {
+		background-color: var(--dark-pink);
+		border: 1px solid var(--dark-pink);
+		color: var(--white);
+	}
+
+	&:focus {
+		border: 1px solid var(--dark-pink);
+	}
+
+	&:active {
+		box-shadow: inset 0px 0px 10px #1b000e;
+	}
+
+	&:disabled {
+		border: 1px solid #555555;
+		color: #555555;
+		background-color: transparent;
+	}
+}
+
+.btn-trnbg {
+	font-size: rem(14);
+	padding: rem(16) rem(50);
+	background-color: transparent;
+	text-transform: uppercase;
+	border: 1px solid var(--white);
+	color: var(--white);
+	transition: all 0.2s ease 0s;
+
+	&.loading .btn-icon-load {
+		display: inline-block;
+	}
+
+	&:hover {
+		background-color: var(--light-green);
+		border: 1px solid var(--light-green);
+		color: var(--black);
+	}
+
+	&:focus {
+		border: 1px solid var(--light-green);
+	}
+
+	&:active {
+		box-shadow: inset 0px 0px 10px #1b000e;
+	}
+
+	&:disabled {
+		border: 1px solid #555555;
+		color: #555555;
+		background-color: transparent;
+	}
+}
+
+.btn-icon-load {
+	display: none;
+	margin: 0px 10px 0px 0px;
+	vertical-align: baseline;
+	animation: rotation 1.5s linear 0s infinite;
+	width: 12px;
+	height: 12px;
+}
+
+@keyframes rotation {
+	from {
+		transform: rotate(0);
+	}
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+.menu-link {
+	color: var(--white);
+	font-size: rem(14);
+	line-height: 1.2;
+	text-transform: uppercase;
+
+	&:hover {
+		color: var(--light-green);
+		text-decoration: underline;
+	}
+}
+
+.label-for-standart-input {
+	color: var(--white);
+	display: block;
+	font-size: rem(14);
+	line-height: 1.2;
+	margin: 0px 0px 4px 0px;
+}
+
+.form-feild {
+	display: flex;
+	flex-direction: column-reverse;
+}
+
+.standart-input {
+	border: 1px solid #555555;
+	background-color: transparent;
+	font-size: rem(14);
+	padding: em(20);
+	width: 100%;
+	color: var(--white);
+	position: relative;
+
+	&::placeholder {
+		color: #555555;
+	}
+
+	&:focus {
+		border: 1px solid var(--white);
+	}
+
+	&:valid {
+		border: 1px solid var(--white);
+	}
+
+	&:disabled {
+		opacity: 0.8;
+
+		& + .label-for-input {
+			color: #555555;
+			opacity: 0.8;
+		}
+	}
+
+	// &:invalid {
+	// 	border: 1px solid #ff3a44;
+	// 	color: #ff3a44;
+
+	// 	&::after {
+	// 		content: '';
+	// 		display: block;
+	// 		width: 5px;
+	// 		height: 10px;
+	// 		background-color: #ff3a44;
+	// 		position: absolute;
+	// 		top: 0;
+	// 		right: -10px;
+	// 		z-index: 1;
+	// 	}
+	// }
+}
+
+.blur-bg {
+	backdrop-filter: blur(20px);
+	border-radius: 10px;
+
+	@supports not (backdrop-filter: blur(20px)) {
+		background: rgba(0, 0, 0, 0.2);
+	}
+}
+
+.block-text {
+	font-size: rem(20);
+	line-height: 1.5;
+	letter-spacing: 0.02em;
+	color: $white;
+
+	p:not(:last-child) {
+		margin-bottom: em(30);
+	}
+}
+
+//============================
+
+@import 'header';
+@import 'main';
+@import 'footer';
