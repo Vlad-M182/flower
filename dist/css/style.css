@@ -2392,7 +2392,7 @@ button.swiper-pagination-bullet {
   display: block;
   width: 814px;
   height: 662px;
-  background: url("../../img/popular/popular-bg-blue.svg") no-repeat;
+  background: url("../img/popular/popular-bg-blue.svg") no-repeat;
   background-size: contain;
   position: absolute;
   top: 35%;
@@ -3570,6 +3570,9 @@ button.swiper-pagination-bullet {
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: start;
+    -webkit-box-pack: stretch;
+        -ms-flex-pack: stretch;
+            justify-content: stretch;
   }
 
   .menu__item {
