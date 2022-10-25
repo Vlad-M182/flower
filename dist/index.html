@@ -1,0 +1,824 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- <link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+		/> -->
+		<link rel="stylesheet" href="css/style.min.css" />
+		<title>Lower Flower | Main</title>
+		<link rel="icon" href="img/logo.ico" type="image/x-icon" />
+		<link
+			href="https://fonts.googleapis.com/css?family=Cormorant:300,regular&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			href="https://fonts.googleapis.com/css?family=Oswald:300,regular,700&display=swap"
+			rel="stylesheet"
+		/>
+	</head>
+
+	<body>
+		<div class="wrapper">
+			<header class="header">
+	<div class="header__container">
+		<div class="header__body">
+			<div class="header__burger burger blur-bg">
+				<span></span>
+			</div>
+			<div class="header__content">
+				<button class="mob-menu-close" type="button">
+					<svg>
+						<use xlink:href="img/icons/icons.svg#mob-menu-close"></use>
+					</svg>
+				</button>
+				<div class="header__logo logo">
+					<a href="#" class="logo__link">
+						<svg
+							class="logo__image"
+							width="33"
+							height="69"
+							viewBox="0 0 33 69"
+							fill="none"
+							xmlns="http://www.w3.org/2000/svg"
+						>
+							<path
+								class="l"
+								d="M10.68 50.9C10.68 52.06 10.8 52.92 11.04 53.48C11.32 54 11.8 54.36 12.48 54.56C13.2 54.76 14.32 54.86 15.84 54.86H23.52C27.48 54.86 29.82 52.32 30.54 47.24C30.54 47.12 30.64 47.08 30.84 47.12C31.08 47.12 31.2 47.18 31.2 47.3C30.84 50.46 30.66 53.06 30.66 55.1C30.66 55.42 30.6 55.66 30.48 55.82C30.36 55.94 30.12 56 29.76 56H2.16C2.08 56 2.04 55.88 2.04 55.64C2.04 55.4 2.08 55.28 2.16 55.28C3.72 55.28 4.86 55.18 5.58 54.98C6.34 54.78 6.84 54.4 7.08 53.84C7.36 53.24 7.5 52.34 7.5 51.14V23.36C7.5 22.16 7.36 21.28 7.08 20.72C6.84 20.16 6.34 19.78 5.58 19.58C4.86 19.34 3.72 19.22 2.16 19.22C2.08 19.22 2.04 19.1 2.04 18.86C2.04 18.62 2.08 18.5 2.16 18.5L5.1 18.56C6.78 18.64 8.1 18.68 9.06 18.68C10.14 18.68 11.52 18.64 13.2 18.56L16.02 18.5C16.1 18.5 16.14 18.62 16.14 18.86C16.14 19.1 16.1 19.22 16.02 19.22C14.46 19.22 13.3 19.34 12.54 19.58C11.82 19.78 11.32 20.18 11.04 20.78C10.8 21.34 10.68 22.22 10.68 23.42V50.9Z"
+								fill="#8A8686"
+							/>
+							<path
+								class="f"
+								d="M29.55 34.1299C29.55 34.2299 29.45 34.2799 29.25 34.2799C29.0833 34.2799 29 34.2299 29 34.1299C29 32.4299 28.55 31.0799 27.65 30.0799C26.75 29.0799 25.5667 28.5799 24.1 28.5799H20.65C19.4167 28.5799 18.5 28.6632 17.9 28.8299C17.3 28.9965 16.8833 29.2965 16.65 29.7299C16.4167 30.1632 16.3 30.8299 16.3 31.7299V42.7299H21.75C23.45 42.7299 24.65 42.4799 25.35 41.9799C26.05 41.4465 26.4 40.5465 26.4 39.2799C26.4 39.2132 26.5 39.1799 26.7 39.1799C26.9 39.1799 27 39.2132 27 39.2799L26.95 43.2299C26.95 44.1965 26.9667 44.9132 27 45.3799L27.05 47.7299C27.05 47.7965 26.95 47.8299 26.75 47.8299C26.55 47.8299 26.45 47.7965 26.45 47.7299C26.45 46.2299 26.0833 45.1799 25.35 44.5799C24.65 43.9799 23.3833 43.6799 21.55 43.6799H16.3V54.6299C16.3 55.6965 16.45 56.4799 16.75 56.9799C17.05 57.4465 17.6167 57.7799 18.45 57.9799C19.3167 58.1799 20.6833 58.2799 22.55 58.2799C22.65 58.2799 22.7 58.3799 22.7 58.5799C22.7 58.7799 22.65 58.8799 22.55 58.8799C21.1833 58.8799 20.1167 58.8632 19.35 58.8299L15 58.7799L11.7 58.8299C11.1 58.8632 10.2667 58.8799 9.2 58.8799C9.13333 58.8799 9.1 58.7799 9.1 58.5799C9.1 58.3799 9.13333 58.2799 9.2 58.2799C10.5 58.2799 11.45 58.1965 12.05 58.0299C12.6833 57.8632 13.1 57.5465 13.3 57.0799C13.5333 56.5799 13.65 55.8299 13.65 54.8299V31.6799C13.65 30.6799 13.5333 29.9465 13.3 29.4799C13.1 29.0132 12.6833 28.6965 12.05 28.5299C11.45 28.3299 10.5 28.2299 9.2 28.2299C9.13333 28.2299 9.1 28.1299 9.1 27.9299C9.1 27.7299 9.13333 27.6299 9.2 27.6299H29C29.3 27.6299 29.45 27.7799 29.45 28.0799L29.55 34.1299Z"
+								fill="white"
+							/>
+						</svg>
+					</a>
+				</div>
+				<nav class="header__nav nav">
+					<ul class="nav__menu menu">
+						<li class="menu__item">
+							<a href="#" class="menu-link">головна</a>
+						</li>
+						<li class="menu__item">
+							<a href="#" class="menu-link">кталог</a>
+							<ul class="menu__sublist sublist">
+								<li class="sublist__item">
+									<a href="#" class="menu-link sublist__item-link">популярне</a>
+								</li>
+								<li class="sublist__item">
+									<a href="#" class="menu-link sublist__item-link">букети</a>
+								</li>
+								<li class="sublist__item">
+									<a href="#" class="menu-link sublist__item-link"
+										>монобукети</a
+									>
+								</li>
+								<li class="sublist__item">
+									<a href="#" class="menu-link sublist__item-link">рози</a>
+								</li>
+								<li class="sublist__item">
+									<a href="#" class="menu-link sublist__item-link">весільні</a>
+								</li>
+								<li class="sublist__item">
+									<a href="#" class="menu-link sublist__item-link"
+										>композиції з квітів у коробці</a
+									>
+								</li>
+								<li class="sublist__item">
+									<a href="#" class="menu-link sublist__item-link"
+										>інтер'єрні композиції</a
+									>
+								</li>
+								<li class="sublist__item">
+									<a href="#" class="menu-link sublist__item-link">осінні</a>
+								</li>
+								<li class="sublist__item">
+									<a href="#" class="menu-link sublist__item-link"
+										>індивідуальний букет</a
+									>
+								</li>
+								<li class="sublist__item">
+									<a href="#" class="menu-link sublist__item-link">сухоцвіти</a>
+								</li>
+								<li class="sublist__item">
+									<a href="#" class="menu-link sublist__item-link">у горшках</a>
+								</li>
+								<li class="sublist__item">
+									<a href="#" class="menu-link sublist__item-link">додатково</a>
+								</li>
+							</ul>
+						</li>
+						<li class="menu__item">
+							<a href="#" class="menu-link">доставка та оплата</a>
+						</li>
+						<li class="menu__item">
+							<a href="#" class="menu-link">про нас</a>
+						</li>
+						<li class="menu__item">
+							<a href="#" class="menu-link">контакти</a>
+						</li>
+						<li class="menu__item">
+							<a href="#" class="menu-link">FAQ</a>
+						</li>
+						<li class="menu__item">
+							<a href="#" class="menu-link">для корпоративних клієнтів</a>
+						</li>
+						<li class="menu__item">
+							<form class="menu-link search-form" name="search-form">
+								<button class="search-form__submit" type="submit">
+									<svg class="search-form__search-icon">
+										<use xlink:href="img/icons/icons.svg#search"></use>
+									</svg>
+								</button>
+								<label class="search-form__search" for="search-value"
+									>пошук</label
+								>
+								<div class="search-form__input">
+									<input
+										id="search-value"
+										type="text"
+										name="search-value"
+										value=""
+										placeholder="Введіть свій запит"
+									/>
+									<button class="search-form__close-form" name="close-form">
+										<svg class="search-form__close">
+											<use xlink:href="img/icons/icons.svg#close"></use>
+										</svg>
+									</button>
+								</div>
+							</form>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+	</div>
+</header>
+
+			<main class="main">
+				<!-- main page - first section -->
+				<section class="main__flowers flowers">
+					<!-- ========info========== -->
+					<div class="header__info info" data-mt="maxWidth,992,nav,afterend">
+						<!-- info__address -->
+						<div class="info__address">
+							<address class="info__address-address">
+								вул. Т.Шевченка, 67
+							</address>
+							<p class="info__address-text">
+								10:00 до 21:00<br />
+								без вихідних
+							</p>
+						</div>
+						<!-- info__email -->
+						<div class="info__email">
+							<a class="info__email-email" href="mailto:zakaz@loverflower.by"
+								>zakaz@loverflower.by</a
+							>
+							<p class="info__email-text">
+								Доставка 24/7 по домовленості з оператором
+							</p>
+						</div>
+						<div class="info__politics">
+							<a href="#" class="info__politics-link"
+								>Політика конфіденційності</a
+							>
+							<a href="#" class="info__politics-link"
+								>Обробка персональних даних</a
+							>
+						</div>
+						<!-- info__social -->
+						<div class="info__social social">
+							<ul class="social__list blur-bg">
+								<li class="social__item">
+									<a href="#" class="social__link">
+										<svg>
+											<use xlink:href="img/icons/icons.svg#instagram"></use>
+										</svg>
+									</a>
+								</li>
+								<li class="social__item">
+									<a href="#" class="social__link">
+										<svg>
+											<use xlink:href="img/icons/icons.svg#watsup"></use>
+										</svg>
+									</a>
+								</li>
+								<li class="social__item">
+									<a href="#" class="social__link">
+										<svg>
+											<use xlink:href="img/icons/icons.svg#phone"></use>
+										</svg>
+									</a>
+								</li>
+							</ul>
+						</div>
+						<!-- info__tel -->
+						<div class="info__tel">
+							<a href="tel:+123456789123" class="info__tel-text"
+								>+123 (45) 678-91-23</a
+							>
+							<a href="tel:+123456789123" class="info__tel-link blur-bg">
+								<svg>
+									<use xlink:href="img/icons/icons.svg#phone-light"></use>
+								</svg>
+								замовити дзвінок
+							</a>
+						</div>
+					</div>
+					<!-- ================ -->
+					<img class="flowers__bg" src="img/flowers/flowers-bg.png" alt="" />
+					<h1 class="text-in-bg">lover</h1>
+					<div class="flowers__container flowers__body">
+						<h2 class="flowers__title-text">flower</h2>
+						<div class="flowers__bottom">
+							<div class="flowers__text block-text">
+								<p>
+									Працюємо для тих, хто цінує свіжість та витонченість квітів
+								</p>
+							</div>
+							<a href="#" class="flowers__button btn-filled">Каталог</a>
+						</div>
+						<div class="flowers__cart cart">
+							<button class="cart__button blur-bg">
+								<svg class="cart__icon">
+									<use xlink:href="./img/icons/icons.svg#cart"></use>
+								</svg>
+								<span class="cart__products-count">5</span>
+							</button>
+						</div>
+					</div>
+				</section>
+
+				<!-- main page - catalogue -->
+				<section class="main__catalogue catalogue">
+					<p class="catalogue__bg-decor catalogue__bg-decor-1">букети</p>
+					<p class="catalogue__bg-decor catalogue__bg-decor-2">квіти</p>
+					<p class="catalogue__bg-decor catalogue__bg-decor-3">додатково</p>
+					<div class="catalogue__container">
+						<h2 class="catalogue__title title1">каталог</h2>
+						<div class="catalogue__body">
+							<div class="catalogue__inner">
+								<!-- catalog element -->
+								<div
+									class="catalogue__item catalogue__item-about block-text block-text-light"
+								>
+									<p>
+										У нас найбільший вибір квітв, букетів, відкриток та
+										подарунків. Ми завжди допоможемо вам підбрати букет до вашої
+										події, наш менеджер проконсультує вас і допоможе визначитися
+										з вибором.
+									</p>
+									<p>Ознайомтесь з нашими розділами каталога.</p>
+								</div>
+								<!-- catalog element -->
+								<div class="catalogue__item item-catalogue blur-bg">
+									<h3 class="item-catalogue__title title3">квіти</h3>
+									<ul class="item-catalogue__list">
+										<li class="item-catalogue__item">збірні букети</li>
+										<li class="item-catalogue__item">монобукети</li>
+										<li class="item-catalogue__item">композиції з квітів</li>
+										<li class="item-catalogue__item">рози</li>
+										<li class="item-catalogue__item">весільні</li>
+									</ul>
+									<div class="item-catalogue__link">
+										<a class="link-pink" href="#">переглянути каталог</a>
+									</div>
+								</div>
+							</div>
+							<div class="catalogue__inner">
+								<!-- catalog element -->
+								<div class="catalogue__item item-catalogue blur-bg">
+									<h3 class="item-catalogue__title title3">
+										готові букети <br />
+										з сухоцвітів
+									</h3>
+									<ul class="item-catalogue__list">
+										<li class="item-catalogue__item">букети</li>
+										<li class="item-catalogue__item">для інтер'єра</li>
+										<li class="item-catalogue__item">композиції</li>
+									</ul>
+									<div class="item-catalogue__link">
+										<a class="link-pink" href="#">переглянути каталог</a>
+									</div>
+								</div>
+								<!-- catalog element -->
+								<div class="catalogue__item item-catalogue blur-bg">
+									<h3 class="item-catalogue__title title3">додатково</h3>
+									<ul class="item-catalogue__list">
+										<li class="item-catalogue__item">кульки</li>
+										<li class="item-catalogue__item">іграшки</li>
+										<li class="item-catalogue__item">відкритки</li>
+										<li class="item-catalogue__item">упаковки</li>
+									</ul>
+									<div class="item-catalogue__link">
+										<a class="link-pink" href="#">переглянути каталог</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<!-- main page - popular -->
+				<section class="main__popular popular">
+					<img class="popular__bg" src="img/popular/popular-bg.jpg">
+					<div class="popular__container">
+						<h2 class="popular__title title1">
+							популярні
+							<span class="popular__title-second-line">букети</span>
+						</h2>
+						<p class="popular__subtitle">Найкращі композиції наших клієнтів</p>
+						<!-- Slider main container -->
+						<div class="swiper popular__slider slider-popular">
+							<!-- Additional required wrapper -->
+							<div class="swiper-wrapper slider-popular__wrapper">
+								<!-- Slides -->
+								<div class="swiper-slide slider-popular__slide">
+									<div class="slider-popular__action action">
+										<span class="action__pink">new</span>
+									</div>
+									<div class="slider-popular__picture">
+										<picture>
+											<!-- <source srcset="img/popular/slide1.webp" type="image/webp" /> -->
+											<img src="img/popular/slide1.jpg" alt="flowers1" />
+										</picture>
+									</div>
+									<p class="slider-popular__title">найкращий день</p>
+									<p class="slider-popular__price">
+										<span class="slider-popular__price-actual">167.000 ₴</span>
+									</p>
+									<!-- add class loading for displaying load icon -->
+									<button class="btn-trnbg">
+										<svg class="btn-icon-load">
+											<use xlink:href="img/icons/icons.svg#loadingWhite"></use>
+										</svg>
+										в корзину
+									</button>
+								</div>
+								<div class="swiper-slide slider-popular__slide">
+									<div class="slider-popular__picture">
+										<picture>
+											<!-- <source srcset="img/popular/slide1.webp" type="image/webp" /> -->
+											<img src="img/popular/slide2.jpg" alt="flowers2" />
+										</picture>
+									</div>
+									<p class="slider-popular__title">найкращий день</p>
+									<p class="slider-popular__price">
+										<span class="slider-popular__price-actual">167.000 ₴</span>
+									</p>
+									<!-- add class loading for displaying load icon -->
+									<button class="btn-trnbg">
+										<svg class="btn-icon-load">
+											<use xlink:href="img/icons/icons.svg#loadingWhite"></use>
+										</svg>
+										в корзину
+									</button>
+								</div>
+								<div class="swiper-slide slider-popular__slide">
+									<div class="slider-popular__action action">
+										<span class="action__green">sale</span>
+									</div>
+									<div class="slider-popular__picture">
+										<picture>
+											<!-- <source srcset="img/popular/slide1.webp" type="image/webp" /> -->
+											<img src="img/popular/slide3.jpg" alt="flowers3" />
+										</picture>
+									</div>
+									<p class="slider-popular__title">найкращий день</p>
+									<p class="slider-popular__price">
+										<span class="slider-popular__price-actual">167.000 ₴</span>
+										<span class="slider-popular__price-old">167.000 ₴</span>
+									</p>
+									<!-- add class loading for displaying load icon -->
+									<button class="btn-trnbg">
+										<svg class="btn-icon-load">
+											<use xlink:href="img/icons/icons.svg#loadingWhite"></use>
+										</svg>
+										в корзину
+									</button>
+								</div>
+								<div class="swiper-slide slider-popular__slide">
+									<div class="slider-popular__action action">
+										<span class="action__green">sale</span>
+									</div>
+									<div class="slider-popular__picture">
+										<picture>
+											<!-- <source srcset="img/popular/slide1.webp" type="image/webp" /> -->
+											<img src="img/popular/slide3.jpg" alt="flowers3" />
+										</picture>
+									</div>
+									<p class="slider-popular__title">найкращий день</p>
+									<p class="slider-popular__price">
+										<span class="slider-popular__price-actual">167.000 ₴</span>
+										<span class="slider-popular__price-old">167.000 ₴</span>
+									</p>
+									<!-- add class loading for displaying load icon -->
+									<button class="btn-trnbg">
+										<svg class="btn-icon-load">
+											<use xlink:href="img/icons/icons.svg#loadingWhite"></use>
+										</svg>
+										в корзину
+									</button>
+								</div>
+							</div>
+						</div>
+						<a class="popular__link link-pink" href="#">
+							переглянути весь каталог
+							<!-- <svg class="popular__link-icon">
+								<use xlink:href="img/icons/icons.svg#slider-arrow"></use>
+							</svg> -->
+						</a>
+						<!-- navigation buttons -->
+						<div class="slider-popular__button-prev">
+							<svg class="slider-popular__link-icon">
+								<use xlink:href="img/icons/icons.svg#slider-arrow" style="fill: #7d2253;"></use>
+							</svg>
+						</div>
+						<div class="slider-popular__button-next">
+							<svg class="slider-popular__link-icon">
+								<use xlink:href="img/icons/icons.svg#slider-arrow"></use>
+							</svg>
+						</div>
+					</section>
+		
+				<!-- main page - how-to-order -->
+				<section class="main__how-to-order how-to-order">
+					<img class="how-to-order__bg-flower" src="img/how-to-order/how-to-order-bg.png">
+					<div class="how-to-order__container">
+						<h2 class="how-to-order__title title1">як зробити <br> замовлення</h2>
+						<div class="how-to-order__steps steps">
+							<img class="steps__bg-sugnature" src="img/how-to-order/signature.png">
+							<ul class="steps__list steps__list-first">
+								<li class="steps__step step">
+									<h4 class="step__title title3">1 крок</h4>
+									<div class="step__text">
+										<p>
+											Виберіть які квіти або подарунки хочете купити
+										</p>
+									</div>
+								</li>
+								<li class="steps__step step">
+									<h4 class="step__title title3">2 крок</h4>
+									<div class="step__text">
+										<p>
+											Оформіть замовлення і ми відправимо вам підтвердження на електронну пошту, також наш менеджер зв'яжиться з вами по телефону або WhatsApp
+										</p>
+									</div>
+								</li>
+								<li class="steps__step step">
+									<h4 class="step__title title3">3 крок</h4>
+									<div class="step__text">
+										<p>
+											Наші флористи уважно створять букет з квітів на початку дня або напередодні
+										</p>
+									</div>
+								</li>
+							</ul>
+							<ul class="steps__list">
+								<li class="steps__step step">
+									<h4 class="step__title title3">4 крок</h4>
+									<div class="step__text">
+										<p>
+											Один з наших кур'єрів або партнерів доставить ваше замовлення за вказаною адресою. Ми відправимо вам повідомлення у WhatsApp як тільки замовлення буде доставлене.
+										</p>
+									</div>
+								</li>
+								<li class="steps__step step">
+									<h4 class="step__title title3">5 крок</h4>
+									<div class="step__text">
+										<p>
+											Насолоджуйтесь квітами
+										</p>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</section>
+
+				<!-- main page - special occasion -->
+				<section class="main__special special">
+					<div class="special__container">
+						<div class="special__body">
+							<h2 class="special__title title1">
+								особливий 
+								<span class="special__title-second-line">привід?</span>
+							</h2>
+							<div class="special__content block-text">
+								<p>ми готові прийти на допомогу і зібрати унікальний букет, на будь-який смак, бюджет та для будь-якої події по вашому індивідуальному замовленні</p>
+								<ul class="special__content-list">
+									<li class="special__content-item">
+										врахуємо найвишуканіші побажання;
+									</li>
+									<li class="special__content-item">
+										підберемо найсвіжіші квіти та зробимо унікальний букет чи композицію;
+									</li>
+									<li class="special__content-item">
+										сплатити можна при отриманні або онлайн на сайті
+									</li>
+								</ul>
+								<a href="#" class="special__content-button btn-filled">зібрати індивідуальний букет</a>
+							</div>
+							<div class="special__image special__image-first">
+								<img src="img/special/1.jpg" alt="особливий подарунок">
+							</div>
+							<div class="special__image">
+								<img src="img/special/2.jpg" alt="різдвяний подарунок">
+							</div>
+							<div class="special__image">
+								<img src="img/special/3.jpg" alt="подарунок для коханих">
+							</div>
+							<div class="special__image">
+								<img src="img/special/4.jpg" alt="фруктовий подарунок">
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<!-- main page - remained questions -->
+				<section class="main__remained remained">
+					<img class="remained__bg" src="img/remained/bg.png" alt="leafs">
+					<img class="remained__sig" src="img/icons/signature2.svg">
+					<div class="remained__container">
+						<div class="remained__body">
+							<h2 class="remained__title title1">залишились
+								<span class="remained__title-second-line">питання?</span>
+							</h2>
+							<div class="remained__text block-text">
+								<p>Відправте ваше питання, замовлення, пропозицію або скаргу через форму зворотнього зв'язку і наш спеціалість зв'яжеться з вами протягом 15 хвилин.</p>
+							</div>
+							<form action="/" class="remained__form form-remained">
+								<p>
+									<label class="form-remained__label invisible" for="name">Ваше ім'я</label>
+									<input class="form-remained__input green-input" type="text" id="name" name="name" value="" placeholder="Ваше ім'я">
+								</p>
+								<p>
+									<label class="form-remained__label invisible" for="phone">Ваш телефон</label>
+									<input class="form-remained__input green-input" type="tel" id="phone" name="phone" value="" placeholder="(012) 345 6789">
+								</p>
+								<p>
+									<label class="form-remained__label invisible" for="question">Ваше запитання</label>
+									<textarea class="form-remained__textarea green-input" name="question" id="question" placeholder="Ваше запитання"></textarea>
+								</p>
+								<button class="form-remained__button btn-filled" type="submit">відправити</button>
+								<p class="form-remained__politics">
+									Натискаючи на кнопку "Відправити", ви даєте свою згоду на обробку персональних даних відповідно до 
+									<a class="form-remained__politics-link link-pink" href="#">Політики конфіденційності</a>
+								</p>
+							</form>
+						</div>
+					</div>
+				</section>
+
+				<!-- main page - social-networks section -->
+				<section class="main__social-networks social-networks">
+					<div class="social-networks__container">
+						<div class="social-networks__body">
+							<div class="social-networks__pictures">
+								<div class="social-networks__image">
+									<img src="img/social-networks/1.jpg" alt="Ялинка на столі">
+								</div>
+								<div class="social-networks__image">
+									<img src="img/social-networks/2.jpg" alt="Жінка тримає гілки ялинки">
+								</div>
+								<div class="social-networks__image">
+									<img src="img/social-networks/3.jpg" alt="Свічки з гілками ялинки">
+								</div>
+								<div class="social-networks__image">
+									<img src="img/social-networks/4.jpg" alt="Букет з якоїсь жовтої рослинки">
+								</div>
+							</div>
+							<div class="social-networks__socials">
+								<div class="social-networks__signature">
+									<img class="social-networks__signature-image" src="img/icons/signature3.svg" alt="Наші соціальні мережі">
+								</div>
+								<div class="social-networks__socials-inner">
+									<a href="#" class="social-networks__socials-link socials-link">
+										<svg>
+											<use xlink:href="img/icons/icons.svg#instagram"></use>
+										</svg>
+									</a>
+									<a href="#" class="social-networks__socials-link socials-link">
+										<svg>
+											<use xlink:href="img/icons/icons.svg#watsup"></use>
+										</svg>
+									</a>
+									<a href="#" class="social-networks__socials-link socials-link">
+										<svg>
+											<use xlink:href="img/icons/icons.svg#phone"></use>
+										</svg>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="last-section-decors"><span></span></div>
+				</section>
+
+				<!-- <div class="main__container">
+					<button class="btn-filled loading">
+						<svg class="btn-icon-load">
+							<use xlink:href="img/icons/icons.svg#loading"></use>
+						</svg>
+						переглянути каталог
+					</button>
+					<button class="btn-trnbg loading">
+						<svg class="btn-icon-load">
+							<use xlink:href="img/icons/icons.svg#loadingWhite"></use>
+						</svg>
+						в корзину
+					</button>
+					<div class="form-feild">
+						<input
+							class="standart-input"
+							type="tel"
+							id="input"
+							required
+							name="input"
+							value=""
+							placeholder="Введіть ваше ім'я"
+						/>
+						<label class="label-for-standart-input" for="input"
+							>Ваше ім'я*</label
+						>
+					</div>
+				</div> -->
+			</main>
+			<footer class="footer">
+	<div class="footer__container">
+		<div class="footer__body">
+			<div class="footer__col">
+				<div class="footer__logo logo">
+					<a href="#" class="logo__link">
+						<svg
+							class="logo__image"
+							width="33"
+							height="69"
+							viewBox="0 0 33 69"
+							fill="none"
+							xmlns="http://www.w3.org/2000/svg"
+						>
+							<path
+								class="l"
+								d="M10.68 50.9C10.68 52.06 10.8 52.92 11.04 53.48C11.32 54 11.8 54.36 12.48 54.56C13.2 54.76 14.32 54.86 15.84 54.86H23.52C27.48 54.86 29.82 52.32 30.54 47.24C30.54 47.12 30.64 47.08 30.84 47.12C31.08 47.12 31.2 47.18 31.2 47.3C30.84 50.46 30.66 53.06 30.66 55.1C30.66 55.42 30.6 55.66 30.48 55.82C30.36 55.94 30.12 56 29.76 56H2.16C2.08 56 2.04 55.88 2.04 55.64C2.04 55.4 2.08 55.28 2.16 55.28C3.72 55.28 4.86 55.18 5.58 54.98C6.34 54.78 6.84 54.4 7.08 53.84C7.36 53.24 7.5 52.34 7.5 51.14V23.36C7.5 22.16 7.36 21.28 7.08 20.72C6.84 20.16 6.34 19.78 5.58 19.58C4.86 19.34 3.72 19.22 2.16 19.22C2.08 19.22 2.04 19.1 2.04 18.86C2.04 18.62 2.08 18.5 2.16 18.5L5.1 18.56C6.78 18.64 8.1 18.68 9.06 18.68C10.14 18.68 11.52 18.64 13.2 18.56L16.02 18.5C16.1 18.5 16.14 18.62 16.14 18.86C16.14 19.1 16.1 19.22 16.02 19.22C14.46 19.22 13.3 19.34 12.54 19.58C11.82 19.78 11.32 20.18 11.04 20.78C10.8 21.34 10.68 22.22 10.68 23.42V50.9Z"
+								fill="#8A8686"
+							/>
+							<path
+								class="f"
+								d="M29.55 34.1299C29.55 34.2299 29.45 34.2799 29.25 34.2799C29.0833 34.2799 29 34.2299 29 34.1299C29 32.4299 28.55 31.0799 27.65 30.0799C26.75 29.0799 25.5667 28.5799 24.1 28.5799H20.65C19.4167 28.5799 18.5 28.6632 17.9 28.8299C17.3 28.9965 16.8833 29.2965 16.65 29.7299C16.4167 30.1632 16.3 30.8299 16.3 31.7299V42.7299H21.75C23.45 42.7299 24.65 42.4799 25.35 41.9799C26.05 41.4465 26.4 40.5465 26.4 39.2799C26.4 39.2132 26.5 39.1799 26.7 39.1799C26.9 39.1799 27 39.2132 27 39.2799L26.95 43.2299C26.95 44.1965 26.9667 44.9132 27 45.3799L27.05 47.7299C27.05 47.7965 26.95 47.8299 26.75 47.8299C26.55 47.8299 26.45 47.7965 26.45 47.7299C26.45 46.2299 26.0833 45.1799 25.35 44.5799C24.65 43.9799 23.3833 43.6799 21.55 43.6799H16.3V54.6299C16.3 55.6965 16.45 56.4799 16.75 56.9799C17.05 57.4465 17.6167 57.7799 18.45 57.9799C19.3167 58.1799 20.6833 58.2799 22.55 58.2799C22.65 58.2799 22.7 58.3799 22.7 58.5799C22.7 58.7799 22.65 58.8799 22.55 58.8799C21.1833 58.8799 20.1167 58.8632 19.35 58.8299L15 58.7799L11.7 58.8299C11.1 58.8632 10.2667 58.8799 9.2 58.8799C9.13333 58.8799 9.1 58.7799 9.1 58.5799C9.1 58.3799 9.13333 58.2799 9.2 58.2799C10.5 58.2799 11.45 58.1965 12.05 58.0299C12.6833 57.8632 13.1 57.5465 13.3 57.0799C13.5333 56.5799 13.65 55.8299 13.65 54.8299V31.6799C13.65 30.6799 13.5333 29.9465 13.3 29.4799C13.1 29.0132 12.6833 28.6965 12.05 28.5299C11.45 28.3299 10.5 28.2299 9.2 28.2299C9.13333 28.2299 9.1 28.1299 9.1 27.9299C9.1 27.7299 9.13333 27.6299 9.2 27.6299H29C29.3 27.6299 29.45 27.7799 29.45 28.0799L29.55 34.1299Z"
+								fill="white"
+							/>
+						</svg>
+					</a>
+				</div>
+				<div class="footer__post" data-mt="maxWidth,768,footer__body,beforeend">
+					<a href="#" class="footer__link">
+						<h6 class="footer__title title6">Реквізити</h6>
+					</a>
+					<ul class="footer__list">
+						<li class="footer__item">
+							Реквізити, довгий рядок, багато тексту, ще якийсь текст
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="footer__col">
+				<a href="#" class="footer__link">
+					<h6 class="footer__title title6">Каталог</h6>
+				</a>
+				<ul class="footer__list">
+					<li class="footer__item">
+						<a class="footer__item-link" href="#">Популярне</a>
+					</li>
+					<li class="footer__item">
+						<a class="footer__item-link" href="#">Сухоцвіти</a>
+					</li>
+					<li class="footer__item">
+						<a class="footer__item-link" href="#">Букети роз</a>
+					</li>
+					<li class="footer__item">
+						<a class="footer__item-link" href="#">Композиції з квітів</a>
+					</li>
+					<li class="footer__item">
+						<a class="footer__item-link" href="#">Індивідуальний букет</a>
+					</li>
+					<li class="footer__item">
+						<a class="footer__item-link" href="#">Букет на свято</a>
+					</li>
+					<li class="footer__item">
+						<a class="footer__item-link" href="#">Пакунок з подарунками</a>
+					</li>
+					<li class="footer__item">
+						<a class="footer__item-link" href="#">Кульки</a>
+					</li>
+					<li class="footer__item">
+						<a class="footer__item-link" href="#">Відкритки</a>
+					</li>
+					<li class="footer__item">
+						<a class="footer__item-link" href="#">Конверти</a>
+					</li>
+				</ul>
+			</div>
+			<div class="footer__col">
+				<a href="#" class="footer__link">
+					<h6 class="footer__title title6">Букети</h6>
+				</a>
+				<ul class="footer__list">
+					<li class="footer__item">
+						<a class="footer__item-link" href="#">Для дівчини</a>
+					</li>
+					<li class="footer__item">
+						<a class="footer__item-link" href="#">Для чоловіка</a>
+					</li>
+					<li class="footer__item">
+						<a class="footer__item-link" href="#">Для жінки</a>
+					</li>
+					<li class="footer__item">
+						<a class="footer__item-link" href="#">Для мами</a>
+					</li>
+					<li class="footer__item">
+						<a class="footer__item-link" href="#">Для колеги</a>
+					</li>
+					<li class="footer__item">
+						<a class="footer__item-link" href="#">Для начальника</a>
+					</li>
+					<li class="footer__item">
+						<a class="footer__item-link" href="#">Для доньки</a>
+					</li>
+					<li class="footer__item">
+						<a class="footer__item-link" href="#">Для дітей</a>
+					</li>
+				</ul>
+			</div>
+			<div class="footer__col footer__col-titles">
+				<a href="#" class="footer__link">
+					<h6 class="footer__title title6">Доставка і оплата</h6>
+				</a>
+				<a href="#" class="footer__link">
+					<h6 class="footer__title title6">Про нас</h6>
+				</a>
+				<a href="#" class="footer__link">
+					<h6 class="footer__title title6">FAQ</h6>
+				</a>
+				<a href="#" class="footer__link">
+					<h6 class="footer__title title6">Контакти</h6>
+				</a>
+				<a href="#" class="footer__link">
+					<h6 class="footer__title title6">Для корпоративних клієнтів</h6>
+				</a>
+			</div>
+			<div class="footer__col">
+				<ul class="footer__info-list">
+					<li class="footer__info-list-item">
+						<a href="mailto:zakaz@loverflower.by" class="title6 footer__link">
+							zakaz@loverflower.by
+						</a>
+						<p class="footer__text">
+							Доставка 24/7 по домовленості з оператором
+						</p>
+					</li>
+					<li class="footer__info-list-item">
+						<address class="footer__info-list-address title6">
+							вул. Т.Шевченка, 67
+						</address>
+						<p class="footer__text">10:00 до 21:00 без вихідних</p>
+					</li>
+					<li class="footer__info-list-item">
+						<a href="tel:+123456789123" class="title6 footer__link">
+							+123 (45) 678-91-23
+						</a>
+						<p class="footer__text">Приймаємо дзвінки цілодобово</p>
+					</li>
+					<li class="footer__info-list-item footer__info-list-item-socials">
+						<a href="#" class="socials-link">
+							<svg>
+								<use xlink:href="img/icons/icons.svg#instagram"></use>
+							</svg>
+						</a>
+						<a href="#" class="socials-link">
+							<svg>
+								<use xlink:href="img/icons/icons.svg#watsup"></use>
+							</svg>
+						</a>
+						<a href="#" class="socials-link">
+							<svg>
+								<use xlink:href="img/icons/icons.svg#phone"></use>
+							</svg>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</footer>
+
+		</div>
+		<script src="js/script.min.js"></script>
+	</body>
+</html>
