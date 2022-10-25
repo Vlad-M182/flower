@@ -1665,7 +1665,6 @@ button.swiper-pagination-bullet {
   background-color: #7d2253;
   filter: blur(100px);
   transform: rotate(43.21deg);
-  animation: 10s linear 0s infinite normal spotAnim;
   height: 473px;
   width: 211px;
 }
@@ -1708,7 +1707,6 @@ button.swiper-pagination-bullet {
   filter: blur(100px);
   filter: blur(100px);
   transform: rotate(41.6deg);
-  animation: 10s linear 0s infinite reverse spotAnim;
   height: 293px;
   width: 359px;
 }
@@ -2002,7 +2000,6 @@ button.swiper-pagination-bullet {
   background-color: #7d2253;
   filter: blur(100px);
   transform: rotate(32.83deg);
-  animation: 15s linear 0s infinite reverse spotAnim3;
   z-index: 2;
 }
 @media (max-width: 992px) {
@@ -2028,7 +2025,6 @@ button.swiper-pagination-bullet {
   filter: blur(100px);
   filter: blur(100px);
   transform: rotate(41.6deg);
-  animation: 15s linear 0s infinite normal spotAnim2;
   z-index: 2;
   height: 211px;
   width: 879px;
