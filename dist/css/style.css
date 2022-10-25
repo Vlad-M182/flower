@@ -3526,6 +3526,12 @@ button.swiper-pagination-bullet {
             backdrop-filter: blur(20px);
   }
 
+  .header__nav {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 auto;
+            flex: 0 0 auto;
+  }
+
   .header__info {
     position: static;
     -webkit-box-align: start;
